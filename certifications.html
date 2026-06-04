@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Swipe Carousel</title>
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 420px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .custom-card-container {
+            width: 100%;
+            flex: 0 0 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .custom-card {
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-card-image {
+            margin: 20px;
+            width: 250px;
+            height: 300px;
+            background-position: center;
+        }
+
+        .custom-card-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .custom-date {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .custom-title {
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .custom-description {
+            margin: 10px 0 20px;
+            color: #666;
+        }
+
+        .custom-read-more-btn {
+            padding: 10px 20px;
+            background: #ff5f5f;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .carousel-btn.left {
+            left: 10px;
+        }
+
+        .carousel-btn.right {
+            right: 10px;
+        }
+
+        .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.296);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 90%;
+    margin-top: 25px;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+            <!-- Card 1 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/FCC.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">1 January 2025</p>
+                        <h2 class="custom-title">Certification FCC</h2>
+                        <p class="custom-description">
+                            FCC certification ensures that products meet safety and electromagnetic compatibility
+                            standards.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image col-sm-12"
+                        style="background-image: url('certificates/Biometric Access - CE -RENEW-1.png');"></div>
+                    <div class="custom-card-content col-sm-12">
+                        <p class="custom-date">5 January 2025</p>
+                        <h2 class="custom-title">Biometric Access</h2>
+                        <p class="custom-description">
+                            Biometric access systems provide enhanced security and user convenience.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/CE Certificate.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">10 January 2025</p>
+                        <h2 class="custom-title">CE Certification</h2>
+                        <p class="custom-description">
+                            CE certification ensures that products meet EU safety, health, and environmental protection
+                            standards.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/CE_FireGuard.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">15 January 2025</p>
+                        <h2 class="custom-title">FireGuard CE</h2>
+                        <p class="custom-description">
+                            FireGuard CE ensures safety against fire hazards with certified equipment.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/ISO-9001-2015-.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">20 January 2025</p>
+                        <h2 class="custom-title">ISO 9001:2015</h2>
+                        <p class="custom-description">
+                            ISO 9001:2015 certification indicates a company's commitment to quality management.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/ISO_ 14001_2015.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">25 January 2025</p>
+                        <h2 class="custom-title">ISO 14001:2015</h2>
+                        <p class="custom-description">
+                            ISO 14001:2015 certification focuses on environmental management systems.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/FCC S2-1.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">30 January 2025</p>
+                        <h2 class="custom-title">FCC S2 Certification</h2>
+                        <p class="custom-description">
+                            FCC S2 certification ensures products meet regulatory requirements for wireless
+                            communication.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 8 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image" style="background-image: url('certificates/FCC RENEW-1.png');"></div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">5 February 2025</p>
+                        <h2 class="custom-title">FCC Renewal</h2>
+                        <p class="custom-description">
+                            FCC renewal ensures that certified products continue to meet safety standards over time.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 9 -->
+            <div class="custom-card-container">
+                <div class="custom-card">
+                    <div class="custom-card-image img-fluid" style="background-image: url('certificates/smoke_detector.png');">
+                    </div>
+                    <div class="custom-card-content">
+                        <p class="custom-date">10 February 2025</p>
+                        <h2 class="custom-title">Smoke Detector</h2>
+                        <p class="custom-description">
+                            Smoke detectors are vital for early detection of fire hazards, ensuring timely evacuation.
+                        </p>
+                        <button class="custom-read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="carousel-btn left" id="prev-btn">&#10094;</button>
+        <button class="carousel-btn right" id="next-btn">&#10095;</button>
+    </div>
+    
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Card Image">
+    </div>
+    
+
+    <script>
+        const track = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        let currentIndex = 0;
+        const totalCards = 5;
+
+        // Function to update the carousel position
+        function updateCarousel() {
+            const offset = currentIndex * -100;
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Move to the next card
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalCards - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first card
+            }
+            updateCarousel();
+        });
+
+        // Move to the previous card
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalCards - 1; // Loop back to the last card
+            }
+            updateCarousel();
+        });
+
+        document.querySelectorAll('.custom-read-more-btn').forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const imageUrls = [
+            'img/FCC.png',
+            'img/Biometric Access - CE -RENEW-1.png',
+            'img/CE Certificate.png',
+            'img/CE_FireGuard.png',
+            'img/ISO-9001-2015-.png',
+            'img/ISO_ 14001_2015.png',
+            'img/FCC S2-1.png',
+            'img/FCC RENEW-1.png',
+            'img/smoke_detector.png'
+        ];
+        
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        
+        modalImage.src = imageUrls[index];
+        modal.style.display = 'block';
+    });
+});
+
+document.getElementById('closeModal').addEventListener('click', () => {
+    document.getElementById('imageModal').style.display = 'none';
+});
+
+    </script>
+
+</body>
+
+</html>

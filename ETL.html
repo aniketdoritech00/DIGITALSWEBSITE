@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ETL | Digitals India Security Pvt. Ltd.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+
+    <link rel="stylesheet" href="fonts/DMSans.css">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Digitals Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+
+                        <div class="ps-3">
+                            <a href="mailto:sales1@digitalsindia.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>sales1@digitalsindia.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-end border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/DigitalsIndia/"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3"
+                                href="https://youtube.com/@digitalsindiasec?si=U2vPtL8KQ0u0xo4z" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/digitalsindia/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0"
+                                href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                        </div>
+                        <div class="dropdown ms-3">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
+                                        class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item">English</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-fluid nav-bar px-sm-0 py-lg-0">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a href="#" class="navbar-brand p-0">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-0 mx-lg-auto">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">Company</a>
+        
+                                <!-- Products Dropdown -->
+                                <div class="nav-item dropdown active">
+                                    <a href="#" class="nav-link dropdown-toggle" id="productsDropdown"
+                                        data-bs-toggle="dropdown">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+        
+                                        <!-- Integrated Security Alarm Systems with Submenu -->
+                                        <a href="guardNg-security-alarm.html" id="intrusion-detection" class="dropdown-item">Integrated Security Alarm System</a>
+                                        <div id="intrusion-detection-submenu" class="dropdown-menu">
+                                            <a href="guardNg-integrated-security-alarm.html" class="dropdown-item">GSM Security Alarm System </a>
+                                            <a href="guardNg-models-security-alarm.html" class="dropdown-item">GSM Security & IP Alarm System </a>
+                                            <a href="securityAlarmAccessories.html" class="dropdown-item">Security Alarm
+                                                Accessories</a>
+                                        </div>
+        
+                                        <!-- Automatic Fire Detection & Alarms Systems with Submenu -->
+                                        <a href="fire-alarm-system-india.html" id="fire-safety" class="dropdown-item">Fire Alarm System</a>
+                                        <div id="fire-safety-submenu" class="dropdown-menu">
+                                            <a href="fireGuards.html" class="dropdown-item">Conventional Fire Alarm Systems</a>
+                                            <a href="fireGuards2.html" class="dropdown-item"> IP based Fire Alarm Systems</a>
+                                            <a href="smartFireAlarm.html" class="dropdown-item"> Smart Fire Alarm Systems</a>
+<a href="fireAlarmAccessories.html" class="dropdown-item">Fire Alarm Accessories</a>
+                                        </div>
+        
+                                        <!-- Independent Alarm Systems with Submenu -->
+                                        <a href="smartShutterGuards.html" id="independent-alarm"
+                                            class="dropdown-item">Independent Alarm Systems</a>
+                                        <div id="independent-alarm-submenu" class="dropdown-menu">
+                                            <a href="shutterGuards.html" class="dropdown-item">GSM based Smart Shutter Guard</a>
+                                            <a href="guardMonitoring.html" class="dropdown-item">Guard Monitoring Solution</a>
+                                            <a href="doorGuard.html" class="dropdown-item">Door Guard</a>
+                                        </div>
+        
+                                        <!-- Smart Dialers with Submenu -->
+                                        <a href="GSM-autodialers.html" id="smart-dialers" class="dropdown-item">Smart
+                                            AutoDialers</a>
+                                        <!-- <div id="smart-dialers-submenu" class="dropdown-menu">
+                                            <a href="pstnBased.html" class="dropdown-item">PSTN based Dialer</a>
+                                            <a href="gsmBasedSmartDialers.html" class="dropdown-item">GSM based Dialer</a>
+                                            <a href="gsmAndPstn.html" class="dropdown-item">GSM and PSTN based Dialer</a>
+                                            <a href="#" class="dropdown-item">IP and GSM based Dialer</a>
+                                        </div> -->
+        
+                                        <!-- Electronic Time Locks with Submenu -->
+                                        <a href="ETL.html" id="electronic-time-locks" class="dropdown-item">Electronic Time
+                                            Locks</a>
+                                        <!-- <div id="electronic-time-locks-submenu" class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">Grill Gate Time Lock</a>
+                                            <a href="#" class="dropdown-item">Safe Based Time Lock</a>
+                                            <a href="#" class="dropdown-item">GSM based Time Lock</a>
+                                            <a href="#" class="dropdown-item">GSM and IP based Time Lock</a>
+                                        </div> -->
+        
+                                        <!-- Access Control & Time Attendance Systems with Submenu -->
+                                        <a href="accessControlSystem.html" id="access-control" class="dropdown-item">Access
+                                            Control & Time Attendance Systems</a>
+                                        <div id="access-control-submenu" class="dropdown-menu">
+                                            <a href="faceAccess.html" class="dropdown-item">Facial Recognition based System</a>
+                                            <a href="fingeraccess.html" class="dropdown-item">Finger and Card based System</a>
+                                        </div>
+        
+                                        <!-- Metal Detection & Entrance Management Systems with Submenu -->
+                                        <a href="metalDetection.html" id="entrance-management" class="dropdown-item">Metal
+                                            Detection & Entrance Management Systems</a>
+                                        <div id="entrance-management-submenu" class="dropdown-menu">
+                                            <a href="handHandleDetector.html" class="dropdown-item">Hand Held Metal Detector</a>
+                                            <a href="doorMetalDetector.html" class="dropdown-item">Door Frame Metal Detector</a>
+                                        </div>
+        
+                                        <!-- Searchlights with Submenu -->
+                                        <a href="searchLights.html" id="innovative-products"
+                                            class="dropdown-item">Searchlights</a>
+                                        <div id="innovative-products-submenu" class="dropdown-menu">
+                                            <a href="ledBased.html" class="dropdown-item">LED Based Searchlights</a>
+                                            <a href="halogenBased.html" class="dropdown-item">Halogen Based Searchlights</a>
+                                        </div>
+
+                                        
+                                 <!-- Asset Tracker  -->
+                                 <a href="assetTracker.html" id="vts" class="dropdown-item">Vehicle Tracking System</a>
+        
+                                        <!-- Central Health Monitoring Systems with Submenu -->
+                                        <a href="CMS.html" id="new-age-solutions" class="dropdown-item">Central Health
+                                            Monitoring
+                                            Systems</a>
+                                        <!-- <div id="new-age-solutions-submenu" class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">SMS based Central Health Monitoring System</a>
+                                            <a href="#" class="dropdown-item">GPRS based Central Health Monitoring System</a>
+                                            <a href="#" class="dropdown-item">IP based Central Health Monitoring System</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+        
+                                <!-- Solutions Dropdown -->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown"
+                                        data-bs-toggle="dropdown">
+                                        Solutions
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                        <a href="bankingAndFinance.html" class="dropdown-item">Banking and Financial Institutions</a>
+                                        <a href="corporateAndEnterprises.html" class="dropdown-item">Corporates and
+                                            Enterprises</a>
+                                        <a href="educationalInstitutions.html" class="dropdown-item">Educational
+                                            Institutions</a>
+                                        <a href="highValueGoods.html" class="dropdown-item">High Value Goods</a>
+                                        <a href="hosptalAndPharma.html" class="dropdown-item">Hospital and Pharmaceutical</a>
+                                        <a href="industries.html" class="dropdown-item">Industrials</a>
+                                        <a href="malls.html" class="dropdown-item">Shopping and Retail</a>
+                                    </div>
+                                </div>
+        
+                                <!-- Support Dropdown -->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown">
+                                        News & Events
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="supportDropdown">
+                                        <a href="organizationalEvents.html" class="dropdown-item">Organizational News</a>
+                                        <a href="productLaunches.html" class="dropdown-item">Product Launches</a>
+                                        <a href="exhitions.html" class="dropdown-item">Exhibitions</a>
+                                        <a href="trainingAndSeminar.html" class="dropdown-item">Training and Seminars</a>
+                                        <a href="blog.html" class="dropdown-item">From Our Blogs</a>
+                                    </div>
+                                </div>
+        
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown">
+                                        Connect
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="supportDropdown">
+                                        <a href="contactUs.html" class="dropdown-item">Contact Us</a>
+                                        <a href="careersDigitals.html" class="dropdown-item">Careers</a>
+                                    </div>
+                                </div>
+                                <div class="nav-btn px-1" id="channelButton1">
+                                    <a href="channelPartner.html"
+                                        class="btn btn-sm btn-primary rounded-pill py-2 px-2 ms-3 flex-shrink-0"> Channel
+                                        Partner</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="nav-btn px-1" id="channelButton2">
+                            <a href="channelPartner.html"
+                                class="btn btn-sm btn-primary rounded-pill py-2 px-2 ms-3 flex-shrink-0"> Channel
+                                Partner</a>
+                        </div>
+        
+                        <!-- Call to action -->
+                        <div class=" d-none d-xl-flex flex-shrink-0 ps-4">
+                            <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                                data-wow-delay=".9s">
+                                <i class="fa fa-phone-alt fa-2x"></i>
+                                <div class="position-absolute" style="top: 7px; right: 12px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                            <div class="d-flex flex-column ms-3">
+                                <span>Call to Our Experts</span>
+                                <a href="#"><span class="text-dark">+ 91 9212787332</span></a>
+                            </div>
+                        </div>
+        
+                    </nav>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+
+    <div class="enquire-btn">
+        <a class="btn" href="#enquiryFooter">Enquire Now !</a>
+    </div>
+
+    <div class="container-fluid bg-breadcrumb"
+        style="background-image: url('img/ETLbg.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Products</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+
+                <li class="breadcrumb-item"><a href="#">Electronic Time Lock</a></li>
+
+            </ol>
+        </div>
+    </div>
+
+    <div class="container-fluid faq-section">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 wow fadeInRight" data-wow-delay="0.2s">
+                    <img src="img/etlmain.png" alt="Monitor Image" class="img-fluid">
+                </div>
+                <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="h-100">
+                        <div class="mb-4">
+                            <h2 class="display-4 mb-0 ">Electronic Time Lock</h2>
+                        </div>
+                        <p class="">
+                            Experience the next level of security with our <b>Electronic Time Lock</b>, designed to give you
+                            complete control from anywhere, anytime. Proudly Make in India and powered by cutting-edge
+                            technology, this advanced solution ensures unmatched reliability and convenience. Embrace
+                            the freedom to manage your locks remotely while securing your premises with
+                            precision-engineered innovation.
+                        </p>
+                        <h6 class="text-dark"><b>Key Features:</b></h6>
+                        <ul class="text-dark">
+                            <li><b>Programmed Operation:</b> Opens only at programmed times with a password.</li>
+                            <li><b>Emergency Override:</b> Manual override available in case of system failure.
+                                Emergency switch locks the system for up to 4 hours during intrusion.</li>
+                            <li><b>GSM Communication:</b> Sends alarm events and logs to mobile devices and the Central
+                                Monitoring Station via SMS and alert calls.</li>
+                            <li><b>Biometric & Printer Compatibility:</b> Supports biometric authentication and can
+                                print log events using a thermal printer.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ETL -->
+    <div class="container-fluid service">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h1 class="display-5 mb-4">Explore Our Electronic Time Locks</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-3" style="border-right: 2px solid #e0e0e0;">
+                    <p onclick="showDivGsm('gsm-1', event)"
+                        style="cursor: pointer; border-left:5px solid #028bd7; padding-left: 10px; background-color: #ffffff;">
+                        Guard ETL</p>
+                    <p onclick="showDivGsm('gsm-2', event)" style="cursor: pointer;">Guard ETL(s)</p>
+                    <p class="mb-5" onclick="showDivGsm('gsm-3', event)" style="cursor: pointer;">Guard ETL-S</p>
+                </div>
+                <div class="col-lg-10 col-md-9" id="gsm-1">
+                    <div class="row g-5">
+                        <div class="col-md-5">
+                            <img src="img/etlmain.png" alt="Monitor Image" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="h-100 d-flex flex-column">
+                                <div class="mb-2">
+                                    <h2 class="display-6 mb-0">Guard ETL <i class="fas fa-info-circle"
+                                            data-bs-toggle="modal" data-bs-target="#myModal"
+                                            style="cursor: pointer; font-size: medium;"></i></h2>
+                                </div>
+                                <div class="hideScroll" style="max-height: 300px; overflow-y: scroll;">
+                                    <p class="text-center">
+                                    <ul>
+                                        <li>Commissioning of Guard ETL does not require any modification
+                                            (Tamper/Drill) in the existing arrangement or locking mechanism of Vault
+                                            Doors, Strong Room Doors, or Grill Doors</li>
+                                        <li>Three modes of operations:
+                                            <ul>
+                                                <li>Auto Mode: Upto 20 operations can be programmed for
+                                                    daily opening</li>
+                                                <li>Timer Mode: Timer setting from 1 minute to 720 minutes
+                                                </li>
+                                                <li>Manual Mode: Lock can be opened through bypass key
+                                                    (Remote Keypad/RF remote) after a preset delay. Manually programmed
+                                                    timer from 1 to 120 minutes</li>
+                                            </ul>
+                                        </li>
+                                        <li>Facility to create/delete users and change user passcodes with complete
+                                            lock management</li>
+                                        <li>Upto 30 bank holidays and 1 weekly holiday can be set</li>
+                                        <li>Wrong try penalty for 15 minutes</li>
+                                        <li>Auxiliary relay contacts for interfacing with other devices during
+                                            robbery attempts</li>
+                                        <li>Automatic door closing after pre-programmed time, and re-locking with a
+                                            password</li>
+                                        <li>Special key and arrangement to open the lock in case of system
+                                            faults</li>
+                                        <li>Independent & separate power supply unit (DC power) with sufficient
+                                            battery backup & protection</li>
+                                        <li>Low battery warning, door status, day, date, time, etc., displayed on
+                                            the LCD screen</li>
+                                        <li>Compatible with Digitals software for computer interface</li>
+                                        <li>Upto 2000 log reports can be viewed, generated, and printed
+                                        </li>
+                                        <li>Hidden override locking system in case of electro-mechanical
+                                            failure</li>
+                                        <li>Provision to apply Emergency mode to deny system access</li>
+                                        <li>Compatible with biometric system and proximity sensors</li>
+                                        <li>Compatible with RF remote for quick action</li>
+                                        <li>Alert SMS and calls sent to the user’s mobile number</li>
+                                        <li>Remote keypad with LCD display for encrypted programming and system
+                                            operation</li>
+                                        <li>Tamper-proof with bolt position sensor</li>
+                                        <li>Onboard keypad with duress code capability</li>
+                                        <li>Motor-driven lock</li>
+                                        <li>Dual user control for lock opening and period extension</li>
+                                        <li>All log alerts sent to CMS via SMS/TCPIP for 2-way
+                                            communication</li>
+                                    </ul>
+
+                                    </p>
+                                </div>
+                                <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <a class="btn btn-primary rounded-pill py-2 px-4"
+                                        onclick="fillProductField('Guard ETL'); showEnquiryPopup();">Know
+                                        More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="col-lg-10 col-md-9" id="gsm-2" style="display: none;">
+                    <div class="row g-5">
+                        <div class="col-md-5">
+                            <img src="img/etls.png" alt="Monitor Image" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="h-100 d-flex flex-column">
+                                <div class="mb-2">
+                                    <h2 class="display-6 mb-0">Guard ETL(s) <i class="fas fa-info-circle"
+                                            data-bs-toggle="modal" data-bs-target="#featuresModal"
+                                            style="cursor: pointer; font-size: medium;"></i></h2>
+                                </div>
+                                <div class="hideScroll" style="max-height: 300px; overflow-y: scroll;">
+                                    <p class="text-center">
+                                    <ul>
+                                        <li>Hassle-free commissioning for any vault/safe door</li>
+                                        <li>Three Modes of Operation:
+                                            <ul>
+                                                <li>Auto Mode: Up to 20 operations can be programmed for
+                                                    daily opening</li>
+                                                <li>Timer Mode: Timer settings from 15 minutes to 720
+                                                    minutes</li>
+                                                <li>Manual Mode: Lock can be opened through a bypass key
+                                                    (Remote Keypad/RF remote) after a preset delay and can be manually
+                                                    programmed for 15 to 1200 minutes</li>
+                                            </ul>
+                                        </li>
+                                        <li>User management: Create/delete users and change passcodes</li>
+                                        <li>Supports up to 30 bank holidays and 1 weekly holiday</li>
+                                        <li>Wrong try penalty for 15 minutes</li>
+                                        <li>Auxiliary relay contacts for interfacing with other devices during
+                                            robbery attempts</li>
+                                        <li>Duress code capability</li>
+                                        <li>Bolt position sensor</li>
+                                        <li>Motor-driven lock</li>
+                                        <li>Lock open period extension feature</li>
+                                        <li>Automatic door closing after pre-programmed time</li>
+                                        <li>Possibility for dual user control</li>
+                                        <li>Special key arrangement to open the lock in case of system
+                                            fault</li>
+                                        <li>Independent & separate power supply unit with sufficient battery
+                                            backup</li>
+                                        <li>Low battery warning displayed on the LCD screen</li>
+                                        <li>Remote keypad with LCD display for encrypted programming using RS485
+                                            communication</li>
+                                        <li>Compatible with Digitals software for computer interface, allowing up to
+                                            2000 log reports to be viewed, generated, and printed</li>
+                                        <li>Hidden override locking system for electromechanical failure
+                                        </li>
+                                        <li>Emergency provision to deny system access</li>
+                                        <li>Compatible with biometric systems and proximity sensors</li>
+                                        <li>Compatible with RF remote for quick actions</li>
+                                        <li>Alert SMS and calls sent to the user's mobile number</li>
+                                        <li>All log alerts sent to the Central Monitoring Station via SMS
+                                        </li>
+                                        <li>2-way communication system</li>
+                                    </ul>
+
+                                    </p>
+                                </div>
+                                <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <a class="btn btn-primary rounded-pill py-2 px-4"
+                                        onclick="fillProductField('Guard ETL(s)'); showEnquiryPopup();">Know
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+
+                <div class="col-lg-10 col-md-9" id="gsm-3" style="display: none;">
+                    <div class="row g-5">
+                        <div class="col-md-5">
+                            <img src="img/DI-ETL-S.png" alt="Monitor Image" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="h-100 d-flex flex-column">
+                                <div class="mb-2">
+                                    <h2 class="display-6 mb-0">Guard ETL-S <i class="fas fa-info-circle"
+                                            data-bs-toggle="modal" data-bs-target="#ETL-S"
+                                            style="cursor: pointer; font-size: medium;"></i></h2>
+                                </div>
+                                <div class="hideScroll">
+                                    <p class="text-center">
+                                    <ul>
+  <li>Advanced 16-bit microcontroller-based technology for reliable performance</li>
+  <li>Robust 8 mm iron casing for enhanced bullet resistance and durability</li>
+  <li>Wide operating voltage range of 12V to 16V for stable functionality</li>
+  <li>Uninterrupted power backup supported with 12V, 7Ah battery</li>
+  <li>Low standby current consumption of approximately 100 mA</li>
+  <li>Backlit 16x2 LCD display for clear and easy visibility</li>
+  <li>User-friendly 4x4 keypad interface for smooth operation</li>
+  <li>Compact and sturdy design with approximate weight of 14 Kg</li>
+  <li>RF remote support at 433 MHz with automatic code learning feature</li>
+  <li>Operates efficiently in temperature range from -10°C to 100°C (14°F to 131°F)</li>
+  <li>Designed to function under air pressure range of 86 to 106 kPa</li>
+  <li>Supports humidity levels between 45% to 95%</li>
+  <li>Compatible with multi-band GSM networks: 2G, 3G, 4G, and 5G</li>
+</ul>
+                                    </p>
+                                </div>
+                                <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <a class="btn btn-primary rounded-pill py-2 px-4"
+                                        onclick="fillProductField('Guard ETL(s)'); showEnquiryPopup();">Know
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ETL -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-dark" id="modalBodyContent">
+                    <table class="table table-bordered table-striped text-center">
+                        <thead style="background-color: #028bd7; color: white;">
+                            <tr>
+                                <th colspan="2">Technical Specifications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Technology</td>
+                                <td>16 bit micro controller</td>
+                            </tr>
+                            <tr>
+                                <td>Bullet Resistance Casing</td>
+                                <td>8 mm iron casing</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Voltage</td>
+                                <td>12V to 15V</td>
+                            </tr>
+                            <tr>
+                                <td>Uninterrupted Power Backup</td>
+                                <td>Operation of the system with 12V, 7Ah battery</td>
+                            </tr>
+                            <tr>
+                                <td>Standby Current</td>
+                                <td>~ 100 mA</td>
+                            </tr>
+                            <tr>
+                                <td>Display Type</td>
+                                <td>Backlit 16x2 LCD</td>
+                            </tr>
+                            <tr>
+                                <td>Keypad</td>
+                                <td>4x4 matrix for easy user interface</td>
+                            </tr>
+                            <tr>
+                                <td>RF Remote</td>
+                                <td>315 MHz, Automatic code learning</td>
+                            </tr>
+                            <tr>
+                                <td>Temp. Range</td>
+                                <td>-10°C to 100°C [14°F - 212°F]</td>
+                            </tr>
+                            <tr>
+                                <td>Air Pressure</td>
+                                <td>86-106 kpa</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity</td>
+                                <td>45-95%</td>
+                            </tr>
+                            <tr>
+                                <td>GSM Network</td>
+                                <td>Quad-Band GSM (850 MHz, 900MHz, 1800 MHz, 1900MHz)</td>
+                            </tr>
+                            <tr>
+                                <td>Colour</td>
+                                <td>Black [Powder Coating]</td>
+                            </tr>
+                            <tr>
+                                <td>Net Weight</td>
+                                <td>14 Kg ± 5%</td>
+                            </tr>
+                            <tr>
+                                <td>Gross Weight</td>
+                                <td>17.50 Kg ± 5%</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>H-220mm; W-220mm; D-67mm; (± 2mm)</td>
+                            </tr>
+                            <tr>
+                                <td>Package Dimensions</td>
+                                <td>L-410mm; W-390mm; D-200mm; (± 2mm)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer p-1">
+                    <a class="btn btn-primary rounded-pill py-2 px-4" data-bs-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal ETL-S -->
+
+
+    <div class="modal fade" id="ETL-S" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-dark" id="modalBodyContent">
+    <div class="table-responsive" style="max-height: 70vh; overflow-y: auto;">
+    <table class="table table-bordered table-striped text-center align-middle">
+      <thead style="background-color: #028bd7; color: white;">
+        <tr>
+          <th>FEATURES</th>
+          <th>GAURD ETL-S / ETL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Technology</td><td>16 bit micro controller based</td></tr>
+        <tr><td>Bullet Resistance Casing</td><td>8 mm iron casing</td></tr>
+        <tr><td>Operating Voltage</td><td>12V - 16V</td></tr>
+        <tr><td>Uninterrupted Power Backup</td><td>Operation of the system with 12V, 7Ah battery</td></tr>
+        <tr><td>Standby Current</td><td>~100 mA</td></tr>
+        <tr><td>Display Type</td><td>Backlit 16X2 LCD</td></tr>
+        <tr><td>Keypad</td><td>4X4 for easy user interface</td></tr>
+        <tr><td>Weight</td><td>14 Kg Approx.</td></tr>
+        <tr><td>RF Remote</td><td>433 MHZ, Automatic code learning</td></tr>
+        <tr><td>Temperature Range</td><td>-10 to 100°C (14°F - 131°F)</td></tr>
+        <tr><td>Air Pressure</td><td>86 - 106 kpa</td></tr>
+        <tr><td>Humidity</td><td>45 - 95 %</td></tr>
+        <tr><td>GSM Network</td><td>2G, 3G, 4G, 5G</td></tr>
+        <tr><td>IP Based System</td><td>Yes</td></tr>
+        <tr><td>Commissioning</td><td>Hassle free</td></tr>
+        <tr><td>Auto mode</td><td>Upto 20 operations programming can be set for daily opening</td></tr>
+        <tr><td>Timer mode</td><td>15-720 minutes</td></tr>
+        <tr><td>Manual mode</td><td>Bypass key after preset delay / Manual Timer</td></tr>
+        <tr><td>Lock Management Features (Create)</td><td>Yes</td></tr>
+        <tr><td>Holiday Settings</td><td>Yes</td></tr>
+        <tr><td>Wrong Try Penalty</td><td>Yes</td></tr>
+        <tr><td>Aux Relay contacts</td><td>Yes</td></tr>
+        <tr><td>Automatic Door Closing feature</td><td>Yes</td></tr>
+        <tr><td>Dual User Control</td><td>Yes</td></tr>
+        <tr><td>Battery backup</td><td>Yes</td></tr>
+        <tr><td>Low battery warning</td><td>Yes</td></tr>
+        <tr><td>Remote keypad/Compatibility with RF</td><td>Yes</td></tr>
+        <tr><td>Compatibility with Biometric system</td><td>Yes</td></tr>
+        <tr><td>Tamper Proof</td><td>Yes</td></tr>
+        <tr><td>Lock open period extension</td><td>Yes</td></tr>
+        <tr><td>All Log Alerts on CMS with SMS</td><td>Yes</td></tr>
+        <tr><td>2 Way Communication</td><td>Yes</td></tr>
+        <tr><td>Duress Code capability</td><td>Yes</td></tr>
+        <tr><td>Motor Driven Lock</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+                </div>
+                <div class="modal-footer p-1">
+                    <a class="btn btn-primary rounded-pill py-2 px-4" data-bs-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ETLs Structure --> 
+    <div class="modal fade" id="featuresModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-dark">
+                    <table class="table table-bordered table-striped mt-3">
+                        <thead style="background-color: #028bd7; color: white;">
+                            <tr>
+                                <th colspan="2" class="text-center">Technical Specifications</th>
+                            </tr>
+                            <tr>
+                                <th>Specification</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Technology</td>
+                                <td>16 bit micro controller</td>
+                            </tr>
+                            <tr>
+                                <td>Bullet Resistance Casing</td>
+                                <td>8 mm iron casing</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Voltage</td>
+                                <td>12V to 15V</td>
+                            </tr>
+                            <tr>
+                                <td>Uninterrupted Power Backup</td>
+                                <td>Operation of the system with 12V, 7Ah battery</td>
+                            </tr>
+                            <tr>
+                                <td>Standby Current</td>
+                                <td>100 mA</td>
+                            </tr>
+                            <tr>
+                                <td>Display Type</td>
+                                <td>Backlit 16x2 LCD</td>
+                            </tr>
+                            <tr>
+                                <td>Keypad</td>
+                                <td>4x4 for easy user interface</td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>22 Kg. Approx</td>
+                            </tr>
+                            <tr>
+                                <td>RF Remote</td>
+                                <td>315 MHZ, Automatic code learning</td>
+                            </tr>
+                            <tr>
+                                <td>Temp. Range</td>
+                                <td>-10° to 55° [14°F - 131°F]</td>
+                            </tr>
+                            <tr>
+                                <td>Air Pressure</td>
+                                <td>86-106 kPa</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity</td>
+                                <td>45-95%</td>
+                            </tr>
+                            <tr>
+                                <td>GSM Network</td>
+                                <td>Quad-Band GSM (850 MHz, 900MHz, 1800 MHz, 1900MHz)</td>
+                            </tr>
+                            <tr>
+                                <td>Colour</td>
+                                <td>Black [Powder Coating]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer p-1">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Enquiry Form -->
+    <div id="enquiryPopup" class="enquiry-popup pop-form-container">
+        <!-- Your entire enquiry form section here -->
+        <button onclick="closeEnquiryPopup()"
+            style="background: none; float: right; border: none; color: white; font-size: 28px; cursor: pointer;">&times;</button>
+
+
+        <h2 class="text-center text-white">Secure Your Perimeter Today</h2>
+        <p class="text-center">Contact us now to learn more
+            about our Electronic Security Solutions and how they can be tailored to meet your specific needs.</p>
+
+        <form id="proenquiryForm">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control newField" id="proname" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control newField" id="proemail" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control newField" id="prophone"
+                        placeholder="Enter your phone number" onKeyPress="if(this.value.length==10) return false;" />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State <span class="text-danger">*</span></label>
+                    <select class="form-select newField" id="prostate" required>
+                        <option value="">--select--</option>
+                        <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="dadra_nagar_haveli">Dadra and Nagar Haveli</option>
+                        <option value="daman_diu">Daman and Diu</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="puducherry">Puducherry</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="products" class="form-label">Products <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control newField" id="proproducts" placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="requirements" class="form-label">Mention your Requirements</label>
+                    <textarea class="form-control newField" id="prorequirements" rows="1"
+                        placeholder="Enter your requirements"></textarea>
+                </div>
+            </div>
+
+            <!-- protom CAPTCHA -->
+            <div class="row mb-3">
+                <label for="popcaptchaInput" class="form-label me-2">Enter CAPTCHA <span
+                        class="text-danger">*</span></label>
+                <div class="col-md-12 d-flex align-items-center">
+
+                    <input type="text" class="form-control newField me-2" id="procaptchaInput"
+                        placeholder="Enter CAPTCHA" required style="max-width: 150px;">
+
+                    <div style="display: flex; align-items: center;">
+                        <div class="procaptcha-box bg-white text-primary text-center border" id="procaptchaDisplay"
+                            style="max-width:100px; margin-right: 10px;"> <!-- CAPTCHA content here -->
+                        </div>
+                        <i class="fas fa-sync-alt" onclick="prorefreshCaptcha()" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mb-5">
+                <button type="submit" class="btn newSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-fluid form-container wow fadeInUp" id="enquiryFooter" data-wow-delay="0.1s">
+        <h2 class="text-center text-white">Secure Your Perimeter Today</h2>
+        <p class="text-center">Take the first step towards Enhanced Perimeter Security. <br>Contact us now to learn more
+            about our Electronic Security Solutions and how they can be tailored to meet your specific needs.</p>
+
+        <form id="enquiryForm">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control newField" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control newField" id="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control newField" id="phone" placeholder="Enter your phone number"
+                        onKeyPress="if(this.value.length==10) return false;" />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State <span class="text-danger">*</span></label>
+                    <select class="form-select newField" id="state" required>
+                        <option value="">--select--</option>
+                        <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="dadra_nagar_haveli">Dadra and Nagar Haveli</option>
+                        <option value="daman_diu">Daman and Diu</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="puducherry">Puducherry</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="products" class="form-label">Products <span class="text-danger">*</span></label>
+                    <select class="form-select newField" id="products" required>
+                        <option value="">--select--</option>
+                        <option value="CCTV-Surveillance-System">CCTV Surveillance System</option>
+                        <option value="Fire-Safety-Solutions">Fire Safety Solutions</option>
+                        <option value="Intrusion-Detection">Intrusion Detection</option>
+                        <option value="Entrance-Management">Entrance Management</option>
+                        <option value="Autodialers">Autodialers</option>
+                        <option value="Smart-Shutter-Guard">Smart Shutter Guard</option>
+                        <option value="Electronic-Time-Lock">Electronic Time Lock</option>
+                        <option value="LED-Searchlights">LED Searchlights</option>
+                        <option value="Guard-Monitoring-System">Guard Monitoring System</option>
+                        <option value="Health-Monitoring-Solution">Health Monitoring Solution</option>
+                        <option value="Central-Monitoring-Solution">Central Monitoring Solution</option>
+                        <option value="Security-Mobile-App">Security Mobile App</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="requirements" class="form-label">Mention your Requirements</label>
+                    <textarea class="form-control newField" id="requirements" rows="1"
+                        placeholder="Enter your requirements"></textarea>
+                </div>
+            </div>
+
+            <!-- Custom CAPTCHA -->
+            <div class="row mb-3">
+                <label for="captchaInput" class="form-label me-2">Enter CAPTCHA <span
+                        class="text-danger">*</span></label>
+                <div class="col-md-12 d-flex align-items-center">
+
+                    <input type="text" class="form-control newField me-2" id="captchaInput" placeholder="Enter CAPTCHA"
+                        required style="max-width: 150px;">
+
+                    <div style="display: flex; align-items: center;">
+                        <div class="captcha-box bg-white text-primary text-center border" id="captchaDisplay"
+                            style="max-width:100px; margin-right: 10px;"> <!-- CAPTCHA content here -->
+                        </div>
+                        <i class="fas fa-sync-alt" onclick="refreshCaptcha()" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mb-5">
+                <button type="submit" class="btn newSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <a href="securityAlarmAccessories.html" class="dropdown-item">Security Alarm Accessories</a> -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Logo and Company Information -->
+                <div class="col-md-12 col-lg-4 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <img src="img/logo.png" alt="Logo" width="150">
+                        </a>
+                        <p class="text-white mb-4">Backed by quality and proven by experience, Digitals India Security
+                            Products Pvt Ltd is ISO 9001:2015 certified and has over three decades of experience in the
+                            security industry.</p>
+                        <div class="footer-btn d-flex">
+                            <a class="btn btn-md-square rounded-circle me-3"
+                                href="https://www.facebook.com/DigitalsIndia/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-3" target="_blank"
+                                href="https://youtube.com/@digitalsindiasec?si=U2vPtL8KQ0u0xo4z"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-3" target="_blank"
+                                href="https://www.instagram.com/digitalsindia/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-0" target="_blank"
+                                href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                        <div class="footer-item mt-5">
+                            <div class="d-flex flex-shrink-0">
+                                <div class="footer-btn">
+                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                        data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt fa-2x"></i>
+                                        <div class="position-absolute" style="top: 2px; right: 12px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                    <span>Call to Our Experts</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">+ 91 9212787332</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-2 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Quick Links</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#quickLinksDropdown" aria-expanded="false"
+                                aria-controls="quickLinksDropdown">
+                                Quick Links <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="quickLinksDropdown">
+                                <a href="index.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Home</a>
+                                <a href="about.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Company</a>
+                                <a href="blog.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                <a href="careersDigitals.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    Careers</a>
+                                <a href="contactUs.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    Contact</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="index.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Company</a>
+                            <a href="blog.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                            <a href="careersDigitals.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                Careers</a>
+                            <a href="contactUs.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Solutions</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#solutionsDropdown" aria-expanded="false"
+                                aria-controls="solutionsDropdown">
+                                Solutions <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="solutionsDropdown">
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Corporates &
+                                    Enterprises</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Educational
+                                    Institutions</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Financial
+                                    Solutions</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> High Value Goods</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Hospitals &
+                                    Pharmaceutical</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Industrials</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Shopping &
+                                    Retail</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Corporates &
+                                Enterprises</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Educational
+                                Institutions</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Financial Solutions</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> High Value Goods</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Hospitals &
+                                Pharmaceutical</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Industrials</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Shopping & Retail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-4 col-xl-3 col-lg-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Products</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#productsDropdown" aria-expanded="false"
+                                aria-controls="productsDropdown">
+                                Products <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="productsDropdown">
+                                <a href="productByBrand.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                    Brand</a>
+                                <a href="productByCategory.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    By Category</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="productByBrand.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                Brand</a>
+                            <a href="productByCategory.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Head Office</h4>
+                                <p class="mb-0">Digitals India Security Products Pvt. Ltd. C-22, Sector-63, Noida,
+                                    Gautam Buddha Nagar, Uttar Pradesh, 201301, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Mail Us</h4>
+                                <p class="mb-0">sales1@digitalsindia.com</p>
+                                <p class="mb-0">info@digitalsindia.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fa fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Telephone</h4>
+                                <p class="mb-0"> +91 120-4202273, <br>+91-9355830975</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Digitals India Security Products Pvt. Ltd
+                        </a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-body">
+
+                    Designed By <a class="border-bottom text-white" href="">Doritech</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquey-3.6.4.min.js"></script>
+    <script src="js/bootstrap5.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/productEnquiry.js"></script>
+    <script src="js/enquiry.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function showDivGsm(divId, event) {
+            const allDivs = document.querySelectorAll('div[id^="gsm-"]');
+
+            // Hide all divs
+            allDivs.forEach(div => div.style.display = 'none');
+
+            // Show the selected div
+            document.getElementById(divId).style.display = 'block';
+
+            // Remove styles from all <p> tags
+            const allPTags = document.querySelectorAll('p[onclick]');
+            allPTags.forEach(p => {
+                p.style.borderLeft = 'none';
+                p.style.paddingLeft = '0';
+                p.style.backgroundColor = ''; // Remove background color
+                p.style.color = ''; // Remove text color
+            });
+
+            // Add styles to the clicked <p> tag
+            event.target.style.borderLeft = '5px solid #028bd7';
+            event.target.style.paddingLeft = '10px'; // Adds space between the text and border
+            event.target.style.backgroundColor = 'white'; // Set background color to white
+            event.target.style.color = 'black'; // Set text color to black
+        }
+
+        function fillProductField(value) {
+            document.getElementById('proproducts').value = value;
+        }
+
+        function showEnquiryPopup() {
+            document.getElementById('enquiryPopup').style.display = 'block';
+        }
+
+        function closeEnquiryPopup() {
+            document.getElementById('enquiryPopup').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us | Digitals India Security Pvt. Ltd.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+
+    <link rel="stylesheet" href="fonts/DMSans.css">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Digitals Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        .card-container {
+            height: 450px;
+            position: relative;
+            /* left: 10%; */
+            background-image: url(img/rb_568.jpg);
+            background-size: cover;
+            /* Image ko div ke size ke hisaab se adjust karega */
+            background-position: center;
+            /* Image ko center me position karega */
+            background-repeat: no-repeat;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        
+
+        #card-content h3,
+        a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+
+                        <div class="ps-3">
+                            <a href="mailto:sales1@digitalsindia.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>sales1@digitalsindia.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-end border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/DigitalsIndia/"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3"
+                                href="https://youtube.com/@digitalsindiasec?si=U2vPtL8KQ0u0xo4z" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/digitalsindia/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0"
+                                href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                        </div>
+                        <div class="dropdown ms-3">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
+                                        class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item">English</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-sm-0 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand p-0">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">Company</a>
+
+                        <!-- Products Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="productsDropdown"
+                                data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="productsDropdown">
+
+                                <!-- Integrated Security Alarm Systems with Submenu -->
+                                <a href="guardNg-security-alarm.html" id="intrusion-detection" class="dropdown-item">Integrated Security Alarm System</a>
+                                <div id="intrusion-detection-submenu" class="dropdown-menu">
+                                    <a href="guardNg-integrated-security-alarm.html" class="dropdown-item">GSM Security Alarm System </a>
+                                    <a href="guardNg-models-security-alarm.html" class="dropdown-item">GSM Security & IP Alarm System </a>
+                                    <a href="securityAlarmAccessories.html" class="dropdown-item">Security Alarm Accessories</a>
+                                </div>
+
+                                <!-- Automatic Fire Detection & Alarms Systems with Submenu -->
+                                <a href="fire-alarm-system-india.html" id="fire-safety" class="dropdown-item">Fire Alarm System
+                                    </a>
+                                <div id="fire-safety-submenu" class="dropdown-menu">
+                                    <a href="fireGuards.html" class="dropdown-item">Conventional Fire Alarm Systems</a>
+                                    <a href="fireGuards2.html" class="dropdown-item"> IP based Fire Alarm Systems</a>
+                                    <a href="smartFireAlarm.html" class="dropdown-item"> Smart Fire Alarm Systems</a>
+<a href="fireAlarmAccessories.html" class="dropdown-item">Fire Alarm Accessories</a>
+                                </div>
+
+                                <!-- Independent Alarm Systems with Submenu -->
+                                <a href="smartShutterGuards.html" id="independent-alarm"
+                                    class="dropdown-item">Independent Alarm Systems</a>
+                                <div id="independent-alarm-submenu" class="dropdown-menu">
+                                    <a href="shutterGuards.html" class="dropdown-item">GSM based Smart Shutter Guard</a>
+                                    <a href="guardMonitoring.html" class="dropdown-item">Guard Monitoring Solution</a>
+                                    <a href="doorGuard.html" class="dropdown-item">Door Guard</a>
+                                </div>
+
+                                <!-- Smart Dialers with Submenu -->
+                                <a href="GSM-autodialers.html" id="smart-dialers" class="dropdown-item">Smart AutoDialers</a>
+                                <!-- <div id="smart-dialers-submenu" class="dropdown-menu">
+                                    <a href="pstnBased.html" class="dropdown-item">PSTN based Dialer</a>
+                                    <a href="gsmBasedSmartDialers.html" class="dropdown-item">GSM based Dialer</a>
+                                    <a href="gsmAndPstn.html" class="dropdown-item">GSM and PSTN based Dialer</a>
+                                    <a href="#" class="dropdown-item">IP and GSM based Dialer</a>
+                                </div> -->
+
+                                <!-- Electronic Time Locks with Submenu -->
+                                <a href="ETL.html" id="electronic-time-locks" class="dropdown-item">Electronic Time
+                                    Locks</a>
+                                <!-- <div id="electronic-time-locks-submenu" class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Grill Gate Time Lock</a>
+                                    <a href="#" class="dropdown-item">Safe Based Time Lock</a>
+                                    <a href="#" class="dropdown-item">GSM based Time Lock</a>
+                                    <a href="#" class="dropdown-item">GSM and IP based Time Lock</a>
+                                </div> -->
+
+                                <!-- Access Control & Time Attendance Systems with Submenu -->
+                                <a href="accessControlSystem.html" id="access-control" class="dropdown-item">Access
+                                    Control & Time Attendance Systems</a>
+                                <div id="access-control-submenu" class="dropdown-menu">
+                                    <a href="faceAccess.html" class="dropdown-item">Facial Recognition based System</a>
+                                    <a href="fingeraccess.html" class="dropdown-item">Finger and Card based System</a>
+                                </div>
+
+                                <!-- Metal Detection & Entrance Management Systems with Submenu -->
+                                <a href="metalDetection.html" id="entrance-management" class="dropdown-item">Metal
+                                    Detection & Entrance Management Systems</a>
+                                <div id="entrance-management-submenu" class="dropdown-menu">
+                                    <a href="handHandleDetector.html" class="dropdown-item">Hand Held Metal Detector</a>
+                                    <a href="doorMetalDetector.html" class="dropdown-item">Door Frame Metal Detector</a>
+                                </div>
+
+                                <!-- Searchlights with Submenu -->
+                                <a href="searchLights.html" id="innovative-products"
+                                    class="dropdown-item">Searchlights</a>
+                                <div id="innovative-products-submenu" class="dropdown-menu">
+                                    <a href="ledBased.html" class="dropdown-item">LED Based Searchlights</a>
+                                    <a href="halogenBased.html" class="dropdown-item">Halogen Based Searchlights</a>
+                                </div>
+
+
+                                 <!-- Asset Tracker  -->
+                                 <a href="assetTracker.html" id="vts" class="dropdown-item">Vehicle Tracking System</a>
+
+<a href="smartCommunicator.html" id="smart-communicator" class="dropdown-item">Smart Communicator</a>
+
+                                <!-- Central Health Monitoring Systems with Submenu -->
+                                <a href="CMS.html" id="new-age-solutions" class="dropdown-item">Central Health Monitoring
+                                    Systems</a>
+                                <!-- <div id="new-age-solutions-submenu" class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">SMS based Central Health Monitoring System</a>
+                                    <a href="#" class="dropdown-item">GPRS based Central Health Monitoring System</a>
+                                    <a href="#" class="dropdown-item">IP based Central Health Monitoring System</a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Solutions Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown"
+                                data-bs-toggle="dropdown">
+                                Solutions
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <a href="bankingAndFinance.html" class="dropdown-item">Banking and Financial Institutions</a>
+                                <a href="corporateAndEnterprises.html" class="dropdown-item">Corporates and Enterprises</a>
+                                <a href="educationalInstitutions.html" class="dropdown-item">Educational Institutions</a>
+                                <a href="highValueGoods.html" class="dropdown-item">High Value Goods</a>
+                                <a href="hosptalAndPharma.html" class="dropdown-item">Hospital and Pharmaceutical</a>
+                                <a href="industries.html" class="dropdown-item">Industrials</a>
+                                <a href="malls.html" class="dropdown-item">Shopping and Retail</a>
+                            </div>
+                        </div>
+
+                        <!-- Support Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown">
+                                News & Events
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="supportDropdown">
+                                <a href="organizationalEvents.html" class="dropdown-item">Organizational News</a>
+                                <a href="productLaunches.html" class="dropdown-item">Product Launches</a>
+                                <a href="exhitions.html" class="dropdown-item">Exhibitions</a>
+                                <a href="trainingAndSeminar.html" class="dropdown-item">Training and Seminars</a>
+                                <a href="blog.html" class="dropdown-item">From Our Blogs</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle" id="supportDropdown" data-bs-toggle="dropdown">
+                                Connect
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="supportDropdown">
+                                <a href="contactUs.html" class="dropdown-item">Contact Us</a>
+                                <a href="careersDigitals.html" class="dropdown-item">Careers</a>
+                            </div>
+                        </div>
+                        <div class="nav-btn px-1" id="channelButton1">
+                    <a href="channelPartner.html"
+                        class="btn btn-sm btn-primary rounded-pill py-2 px-2 ms-3 flex-shrink-0"> Channel
+                        Partner</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="nav-btn px-1" id="channelButton2">
+                    <a href="channelPartner.html"
+                        class="btn btn-sm btn-primary rounded-pill py-2 px-2 ms-3 flex-shrink-0"> Channel
+                        Partner</a>
+                </div>
+
+                <!-- Call to action -->
+                <div class=" d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt fa-2x"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call to Our Experts</span>
+                        <a href="#"><span class="text-dark">+ 91 9212787332</span></a>
+                    </div>
+                  </div>
+                  
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <div class="enquire-btn">
+        <a class="btn" href="#enquiryFooter">Enquire Now !</a>
+    </div>
+
+
+    <div class="container-fluid bg-breadcrumb"
+        style="background-image: url('img/contact_us.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+        </div>
+    </div>
+
+
+    <div class="container-fluid contact bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Contact Us</h4>
+                <h1 class="display-6 mb-4">If you have any query.. Feel free to connect</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="contact-img d-flex justify-content-center">
+                        <div class="contact-img-inner">
+                            <img src="img/contact_img.png" height="400" width="400" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div>
+                        <h4 class="text-primary">Send Your Message</h4>
+                        <form id="contactForm" method="POST">
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="name1" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control border-0" id="phone" name="phone"
+                                            placeholder="Phone" required>
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="email1" name="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here"
+                                            id="message1" name="message" style="height: 100px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-50 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="rounded">
+                        <iframe class="rounded w-100" style="height: 400px; border: 3px solid #028b;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4569038340824!2d77.37899251045619!3d28.616065275572282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce501c4190a79%3A0x9ab4f8b57a95973e!2sDigitals%20India%20Security%20Products%20Pvt%20Ltd%20(CO)!5e0!3m2!1sen!2sin!4v1725966136422!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid contact py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+                <h1 class="display-4 mb-4">Our Network</h1>
+                <p class="text-dark mb-0">At Digitals India Security Products Limited, we proudly operate through a
+                    strong network of 17 branch offices across India, including key locations such as Noida, Delhi,
+                    Kolkata, and Mumbai. With our corporate office based in Noida, we are committed to delivering
+                    advanced security solutions nationwide.
+                </p>
+                <p class="text-center text-dark m-3"><i class="fa fa-map-marker-alt" style="color: #028bd7;"></i> Head
+                    Office | <i class="fa fa-map-marker-alt" style="color: hsl(137, 84%, 27%);"></i> Branch</p>
+            </div>
+            <div class="row">
+                <!-- Left Column: Locations -->
+                <div class="col-xl-4 col-md-5 locations-container">
+                    <h3 class="text-center">Our Presence</h3>
+                    <div class="list-group" id="locations-list">
+                        <div class="row">
+                            <div class=" p-4 col-6 text-dark">
+                                <p class="list-items" style="cursor: pointer;" data-target="NOI-011">
+                                    <i class="fa fa-map-marker-alt city-marker fa-bounce" style="color: #028bd7"></i>
+                                    Noida
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="BAN-001">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Bangalore
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="BHO-002">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Bhopal
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="AHM-003">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Ahmedabad
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="DEL-004">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Delhi
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="HYD-005">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Hyderabad
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="JAI-006">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Jaipur
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="ERN-007">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Ernakulam
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="KOL-008">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Kolkata
+                                </p>
+                            </div>
+                            <div class=" p-4 col-6 text-dark">
+                                <p class="list-items" style="cursor: pointer;" data-target="LUC-009">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Lucknow
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="MUM-010">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Mumbai
+                                </p>
+
+                                <p class="list-items" style="cursor: pointer;" data-target="PAT-012">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Patna
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="JAL-013">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Jalandhar
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="RAI-014">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Raipur
+                                </p>
+                                <p class="list-items" style="cursor: pointer;" data-target="VAR-015">
+                                    <i class="fa fa-map-marker-alt city-marker" style="color: hsl(137, 84%, 27%);"></i>
+                                    Varanasi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Right Column: Card Content -->
+                <div class="col-xl-8 col-md-7 card-container" style="color: white;">
+                    <div id="card-content">
+                        <!-- Default Content -->
+                        <h3>Noida</h3>
+                        <p><strong>Address:</strong> Digitals India Security Products Pvt. Ltd. <br> C-22, Sector-63,
+                            NOIDA-201301(U.P)</p>
+                        <p><strong>State Name:</strong> Uttar Pradesh, Code: 09</p>
+                        <p><strong>E-Mail:</strong> <a
+                                href="mailto:di.noida@digitalsindia.com">di.noida@digitalsindia.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid form-container wow fadeInUp" id="enquiryFooter" data-wow-delay="0.1s">
+        <h2 class="text-center text-white">Secure Your Perimeter Today</h2>
+        <p class="text-center">Take the first step towards Enhanced Perimeter Security. <br>Contact us now to learn more
+            about our Electronic Security Solutions and how they can be tailored to meet your specific needs.</p>
+
+        <form id="enquiryForm">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control newField" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control newField" id="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control newField" id="phone" placeholder="Enter your phone number"
+                        onKeyPress="if(this.value.length==10) return false;" />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State <span class="text-danger">*</span></label>
+                    <select class="form-select newField" id="state" required>
+                        <option value="">--select--</option>
+                        <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="dadra_nagar_haveli">Dadra and Nagar Haveli</option>
+                        <option value="daman_diu">Daman and Diu</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="puducherry">Puducherry</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="products" class="form-label">Products <span class="text-danger">*</span></label>
+                    <select class="form-select newField" id="products" required>
+                        <option value="">--select--</option>
+                        <option value="CCTV-Surveillance-System">CCTV Surveillance System</option>
+                        <option value="Fire-Safety-Solutions">Fire Safety Solutions</option>
+                        <option value="Intrusion-Detection">Intrusion Detection</option>
+                        <option value="Entrance-Management">Entrance Management</option>
+                        <option value="Autodialers">Autodialers</option>
+                        <option value="Smart-Shutter-Guard">Smart Shutter Guard</option>
+                        <option value="Electronic-Time-Lock">Electronic Time Lock</option>
+                        <option value="LED-Searchlights">LED Searchlights</option>
+                        <option value="Guard-Monitoring-System">Guard Monitoring System</option>
+                        <option value="Health-Monitoring-Solution">Health Monitoring Solution</option>
+                        <option value="Central-Monitoring-Solution">Central Monitoring Solution</option>
+                        <option value="Security-Mobile-App">Security Mobile App</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="requirements" class="form-label">Mention your Requirements</label>
+                    <textarea class="form-control newField" id="requirements" rows="1"
+                        placeholder="Enter your requirements"></textarea>
+                </div>
+            </div>
+
+            <!-- Custom CAPTCHA -->
+            <div class="row mb-3">
+                <label for="captchaInput" class="form-label me-2">Enter CAPTCHA <span
+                        class="text-danger">*</span></label>
+                <div class="col-md-12 d-flex align-items-center">
+
+                    <input type="text" class="form-control newField me-2" id="captchaInput" placeholder="Enter CAPTCHA"
+                        required style="max-width: 150px;">
+
+                    <div style="display: flex; align-items: center;">
+                        <div class="captcha-box bg-white text-primary text-center border" id="captchaDisplay"
+                            style="max-width:100px; margin-right: 10px;"> <!-- CAPTCHA content here -->
+                        </div>
+                        <i class="fas fa-sync-alt" onclick="refreshCaptcha()" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mb-5">
+                <button type="submit" class="btn newSubmit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <a href="securityAlarmAccessories.html" class="dropdown-item">Security Alarm Accessories</a> -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Logo and Company Information -->
+                <div class="col-md-12 col-lg-4 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <img src="img/logo.png" alt="Logo" width="150">
+                        </a>
+                        <p class="text-white mb-4">Backed by quality and proven by experience, Digitals India Security
+                            Products Pvt Ltd is ISO 9001:2015 certified and has over three decades of experience in the
+                            security industry.</p>
+                        <div class="footer-btn d-flex">
+                            <a class="btn btn-md-square rounded-circle me-3"
+                                href="https://www.facebook.com/DigitalsIndia/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-3" target="_blank"
+                                href="https://youtube.com/@digitalsindiasec?si=U2vPtL8KQ0u0xo4z"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-3" target="_blank"
+                                href="https://www.instagram.com/digitalsindia/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-md-square rounded-circle me-0" target="_blank"
+                                href="https://www.linkedin.com/company/digitals-india-security-products-p-ltd/posts/?feedView=all"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                        <div class="footer-item mt-5">
+                            <div class="d-flex flex-shrink-0">
+                                <div class="footer-btn">
+                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                        data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt fa-2x"></i>
+                                        <div class="position-absolute" style="top: 2px; right: 12px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                    <span>Call to Our Experts</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">+ 91 9212787332</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 col-lg-2 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Quick Links</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#quickLinksDropdown" aria-expanded="false"
+                                aria-controls="quickLinksDropdown">
+                                Quick Links <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="quickLinksDropdown">
+                                <a href="index.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Home</a>
+                                <a href="about.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Company</a>
+                                <a href="blog.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                <a href="careersDigitals.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    Careers</a>
+                                <a href="contactUs.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    Contact</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="index.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Company</a>
+                            <a href="blog.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                            <a href="careersDigitals.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                Careers</a>
+                            <a href="contactUs.html" class="d-block"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Solutions</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#solutionsDropdown" aria-expanded="false"
+                                aria-controls="solutionsDropdown">
+                                Solutions <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="solutionsDropdown">
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Corporates &
+                                    Enterprises</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Educational
+                                    Institutions</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Financial
+                                    Solutions</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> High Value Goods</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Hospitals &
+                                    Pharmaceutical</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Industrials</a>
+                                <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Shopping &
+                                    Retail</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Corporates &
+                                Enterprises</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Educational
+                                Institutions</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Financial Solutions</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> High Value Goods</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Hospitals &
+                                Pharmaceutical</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Industrials</a>
+                            <a href="#" class="d-block"><i class="fas fa-angle-right me-2"></i> Shopping & Retail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-4 col-xl-3 col-lg-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-2 d-none d-md-block">Products</h4>
+
+                        <!-- Dropdown for Small Screens -->
+                        <div class="d-md-none">
+                            <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#productsDropdown" aria-expanded="false"
+                                aria-controls="productsDropdown">
+                                Products <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="productsDropdown">
+                                <a href="productByBrand.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                    Brand</a>
+                                <a href="productByCategory.html" class="d-block"><i class="fas fa-angle-right me-2"></i>
+                                    By Category</a>
+                            </div>
+                        </div>
+
+                        <!-- Standard Links for Larger Screens -->
+                        <div class="d-none d-md-block">
+                            <a href="productByBrand.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                Brand</a>
+                            <a href="productByCategory.html" class="d-block"><i class="fas fa-angle-right me-2"></i> By
+                                Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Head Office</h4>
+                                <p class="mb-0">Digitals India Security Products Pvt. Ltd. C-22, Sector-63, Noida,
+                                    Gautam Buddha Nagar, Uttar Pradesh, 201301, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Mail Us</h4>
+                                <p class="mb-0">sales1@digitalsindia.com</p>
+                                <p class="mb-0">info@digitalsindia.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="d-flex">
+                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                <i class="fa fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white">Telephone</h4>
+                                <p class="mb-0"> +91 120-4202273, <br>+91-9355830975</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Digitals India Security Products Pvt. Ltd
+                        </a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-body">
+
+                    Designed By <a class="border-bottom text-white" href="">Doritech</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquey-3.6.4.min.js"></script>
+    <script src="js/bootstrap5.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/enquiry.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Complete card data for all locations
+        const cardsData = {
+          "BAN-001": `
+    <h3>Bangalore</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> 895, Ground Floor, 19th Main, 22nd Cross, Behind BDA Complex, Banashankari, 2nd Stage, Bangalore-560070, Karnataka.</p>
+    <p><strong>State Name:</strong> Karnataka</p>
+    <p><strong>E-Mail:</strong> <a href="di.bangalore@digitalsindia.com">di.bangalore@digitalsindia.com</a></p>
+`,
+
+"BHO-002": `
+    <h3>Bhopal</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> 258, First Floor, Zone-II, M.P Nagar, Near Hotel Ganpati, Bhopal, Madhya Pradesh</p>
+    <p><strong>State Name:</strong> Madhya Pradesh</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.bhopal@digitalsindia.com">di.bhopal@digitalsindia.com</a></p>
+`,
+
+"AHM-003": `
+    <h3>Ahmedabad</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> 20/1, Mayurpankh Society, Near Parul Shopping Center, In Umiya Vijay Lane, Shivranjani Char Rasta, Satellite Road, Ahmedabad-380015</p>
+    <p><strong>State Name:</strong> Gujarat</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:info@digitalsindia.com">info@digitalsindia.com</a></p>
+`,
+
+"DEL-004": `
+    <h3>Delhi</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> Hall No.1, C Block Market Surajmal Vihar, Delhi-92</p>
+    <p><strong>State Name:</strong> Delhi</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:delhi@digitalsindia.com">delhi@digitalsindia.com</a></p>
+`,
+
+"HYD-005": `
+    <h3>Hyderabad</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> Survey No.199, Office No.01, 1st Floor, Kanukula Anasuya Reddy Krishna Reddy Complex, Akbar Road, Diamond Point, Sikh Village, Secunderabad, Telangana</p>
+    <p><strong>State Name:</strong> Telangana</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:hyd@digitalsindia.com">hyd@digitalsindia.com</a></p>
+`,
+
+"JAI-006": `
+    <h3>Jaipur</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> W-8, Mahesh Chamber, M.I. Road, Park Street, Jaipur, Rajasthan, Pin No. 302001</p>
+    <p><strong>State Name:</strong> Rajasthan</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.jaipur@digitalsindia.com">di.jaipur@digitalsindia.com</a></p>
+`,
+
+"ERN-007": `
+    <h3>Ernakulam</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> 33/942A, Perumbatta Road, Near Cochin Corporation, P.O. Elamakkara, Kochi, Distt-Ernakulam, Kerala-682026</p>
+    <p><strong>State Name:</strong> Kerala</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.kerala@digitalsindia.com">di.kerala@digitalsindia.com</a></p>
+`,
+
+"KOL-008": `
+    <h3>Kolkata</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> S.P. No. 422, In Premises No. 17/1, Plot No. 422, Block- J, Sahapur Colony East, New Alipur, Kolkata, West Bengal- 700053</p>
+    <p><strong>Branch Address:</strong> Siliguri Jalpaimore Sitala Para, Chourangi More, Road No. 10, PS-NJP, Near Chourangi More Club, Ward No. 31 of SNC, Po- Siliguri Bazar, Jalpaiguri, West Bengal- 734005</p>
+    <p><strong>State Name:</strong> West Bengal</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.kolkata@digitalsindia.com">di.kolkata@digitalsindia.com</a></p>
+`,
+
+"LUC-009": `
+    <h3>Lucknow</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> CP-019, LDA Market, Sardari Khera, Alambagh, Lucknow, (U.P.) 226005</p>
+    <p><strong>State Name:</strong> Uttar Pradesh</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.lucknow@digitalsindia.com">di.lucknow@digitalsindia.com</a></p>
+`,
+
+"MUM-010": `
+    <h3>Mumbai</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> A/23, 002, Matru Chhaya Shanti Nagar, CHS Ltd., Mira Road East, Opp-Allahabad Bank, Shanti Nagar, Sector-10, Mira Bhayandar, Thane-401107, Maharashtra</p>
+    <p><strong>State Name:</strong> Maharashtra</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.mumbai@digitalsindia.com">di.mumbai@digitalsindia.com</a></p>
+`,
+
+"NOI-011": `
+    <h3>Noida</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> C-22, Sector-63, NOIDA-201301(U.P)</p>
+    <p><strong>State Name:</strong> Uttar Pradesh</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.noida@digitalsindia.com">di.noida@digitalsindia.com</a></p>
+`,
+
+"PAT-012": `
+    <h3>Patna</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> 1st Floor, Gaurav Medical, Near Dr.R.K.Agarwal, Opp-CDA Building, Rajendra Path, Exhibition Road, Patna (Bihar)-800001</p>
+    <p><strong>State Name:</strong> Bihar</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.patna@digitalsindia.com">di.patna@digitalsindia.com</a></p>
+`,
+
+"JAL-013": `
+    <h3>Jalandhar</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> SCONO 6-7 Saundh Complex, Atwal House, Cant Road, Jalandhar, Punjab</p>
+    <p><strong>Phone:</strong> 0181-4634072</p>
+    <p><strong>State Name:</strong> Punjab</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:devilal@digitalsindia.com">di.jalandhar@digitalsindia.com</a></p>
+`,
+
+"RAI-014": `
+    <h3>Raipur</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> Vikash Nagar, Main Road, Near Canara Bank, Gudhiyari, Raipur, Chhattisgarh-492001</p>
+    <p><strong>State Name:</strong> Chhattisgarh</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.raipur@digitalsindia.com">di.raipur@digitalsindia.com</a></p>
+`,
+
+"VAR-015": `
+    <h3>Varanasi</h3>
+    <p>Digitals India Security Products Pvt. Ltd.</p>
+    <p><strong>Address:</strong> H.No.438, Gali No.07, Krishna Nagar, Samne Ghat, Lanka, Varanasi (U.P.)-221001</p>
+    <p><strong>State Name:</strong> Uttar Pradesh</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:di.varanasi@digitalsindia.com">di.varanasi@digitalsindia.com</a></p>
+`
+
+            // Add other locations similarly...
+        };
+
+        // Event listener to handle location click
+        document.querySelectorAll("#locations-list .list-items").forEach(item => {
+            item.addEventListener("click", function () {
+                const targetId = this.dataset.target;
+                const content = cardsData[targetId] || `<h3>Location Not Found</h3>`;
+                document.getElementById("card-content").innerHTML = content;
+
+                // Add active class to highlight selected location
+                document.querySelectorAll("#locations-list .list-items").forEach(li => li.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

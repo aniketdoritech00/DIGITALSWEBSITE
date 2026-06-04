@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitals India — Advanced Fire &amp; Security Solutions</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/landingPage.css" />
+
+    <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- SweetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+      /* Reveal animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.55s ease,
+          transform 0.55s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* Navbar scrolled state */
+      .navbar.scrolled {
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Brand Logo (text-based fallback styled like original) -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div style="display: flex; align-items: center; gap: 6px">
+            <img src="img/logo.png" alt="" />
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0"
+          >
+            <li class="nav-item"><a class="nav-link" href="https://digitalsindia.com/productByBrand.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://digitalsindia.com/channelPartner.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://digitalsindia.com/about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://digitalsindia.com/contactUs.html">Contact</a></li>
+          </ul>
+          <div class="ms-lg-4 d-flex align-items-center gap-3 mt-2 mt-lg-0">
+            <div class="contact-info d-none d-xl-flex">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+91 9212787332</span>
+            </div>
+            <a href="#contact" class="btn-callback nav-link"
+              >Get a Free Security Audit</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+     HERO
+     ============================================================ -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left copy -->
+          <div class="col-lg-6 col-xl-5">
+            <h1 class="hero-title">
+              <span>ADVANCED</span><br />
+              <span class="fire">FIRE</span> &amp;<span class="security">
+                SECURITY</span
+              ><br />
+              SOLUTIONS
+            </h1>
+            <p class="hero-subtitle py-2" style="letter-spacing: 1px">
+              Protecting What Matters Most
+            </p>
+
+            <a href="#contact" class="btn-hero">
+              Get a Free Security Audit
+              <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+            </a>
+
+            <!-- Feature pills -->
+            <div class="hero-features mt-4">
+              <div class="hero-feature-item">
+                <div class="icon-circle">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <span>Reliable<br />Technology</span>
+              </div>
+              <div class="hero-feature-item">
+                <div class="icon-circle"><i class="bi bi-gear"></i></div>
+                <span>Customised<br />Solutions</span>
+              </div>
+              <div class="hero-feature-item">
+                <div class="icon-circle"><i class="bi bi-headset"></i></div>
+                <span>Expert<br />Support</span>
+              </div>
+              <div class="hero-feature-item">
+                <div class="icon-circle"><i class="bi bi-award"></i></div>
+                <span>Trusted by<br />Thousands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-0 text-center">
+          <div class="col">
+            <div class="stat-item">
+              <div class="stat-number" data-count="20" data-suffix="K+">0</div>
+              <div class="stat-label">Active Sites</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat-item">
+              <div class="stat-number" data-count="37" data-suffix="+">0</div>
+              <div class="stat-label">Pan-India<br />Locations</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat-item">
+              <div class="stat-number" data-count="300" data-suffix="+">0</div>
+              <div class="stat-label">Channel<br />Partners</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat-item">
+              <div class="stat-number" data-count="45" data-suffix="+">0</div>
+              <div class="stat-label">Years of<br />Experience</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="stat-item">
+              <div class="stat-number" data-count="100" data-suffix="+">0</div>
+              <div class="stat-label">Make in India<br />Products</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     COMPANY OVERVIEW + WHY CHOOSE
+     ============================================================ -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="row align-items-start g-4">
+          <!-- Company Overview -->
+          <div class="col-lg-5 reveal">
+            <h2 class="section-title">COMPANY OVERVIEW</h2>
+            <span class="section-label d-block"></span>
+            <p class="text-dark">
+              Digitals India is a leading manufacturer of fire and security
+              alarm systems, delivering reliable protection. We specialize in
+              designing and manufacturing high-performance electronic security
+              systems tailored for critical sectors.
+            </p>
+
+            <div class="extra-content" id="overview-extra">
+              <p class="mt-1 text-dark">
+                We specialize in designing and manufacturing high-performance
+                electronic security systems tailored for critical sectors where
+                safety cannot be compromised.
+              </p>
+              <ul>
+                <li>Trusted by leading banks and institutions</li>
+                <li>Proven track record across India</li>
+                <li>Strong focus on quality, innovation and service</li>
+              </ul>
+            </div>
+
+            <a
+              href="#"
+              class="read-more-link mt-2 d-inline-flex"
+              onclick="
+                toggleReadMore('overview-extra', this);
+                return false;
+              "
+            >
+              Read more <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+
+          <!-- Vertical Divider -->
+          <div class="col-lg-1 d-none d-lg-flex justify-content-center">
+            <div class="v-divider"></div>
+          </div>
+
+          <!-- Why Choose -->
+          <div class="col-lg-6 reveal">
+            <h2 class="section-title">WHY CHOOSE DIGITALS INDIA</h2>
+            <span class="section-label d-block"></span>
+            <ul class="why-list mt-3">
+              <li>
+                <i class="bi bi-check-circle check"></i>
+                45+ years of trusted expertise
+              </li>
+              <li>
+                <i class="bi bi-check-circle check"></i>
+                Designed &amp; manufactured in India
+              </li>
+              <li>
+                <i class="bi bi-check-circle check"></i>
+                Trusted by SBI, PNB, Union Bank and 50+ PSU banks.
+              </li>
+            </ul>
+
+            <div class="extra-content" id="why-extra">
+              <ul class="why-list">
+                <li>
+                  <i class="bi bi-check-circle check"></i>Scalable and customize
+                  solutions
+                </li>
+                <li>
+                  <i class="bi bi-check-circle check"></i>Dedicated service and
+                  support
+                </li>
+                <li>
+                  <i class="bi bi-check-circle check"></i>High reliability with
+                  certified products
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="#"
+              class="read-more-link mt-3"
+              onclick="
+                toggleReadMore('why-extra', this);
+                return false;
+              "
+            >
+              Read more <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     GALLERY ROW
+     ============================================================ -->
+    <section
+      class="gallery-section pb-4"
+      style="
+        background-image: url(&quot;img/di-element-dots-bg.png&quot;);
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="container">
+        <div class="row g-3">
+          <!-- Gallery placeholder images using SVG patterns -->
+          <div class="col-6 col-sm-4 col-md reveal">
+            <div class="gallery-img">
+              <img
+                src="img/digitals-india-building.png"
+                alt="Digtals India Building"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md reveal">
+            <div class="gallery-img">
+              <img
+                src="img/Command-Center -Main.png"
+                alt="Digtals India Command Center"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md reveal">
+            <div class="gallery-img">
+              <img
+                src="img/Command-Center-Room.png"
+                alt="Digtals India Command Center Room"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md reveal">
+            <div class="gallery-img">
+              <img
+                src="img/digitals-india-employee.png"
+                alt="Digtals India R&D Lab"
+              />
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md reveal">
+            <div class="gallery-img">
+              <img
+                src="img/digitals-india-machine1.png"
+                alt="Digtals India Manufacturing Unit"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     ENVIRONMENTS
+     ============================================================ -->
+    <section
+      class="environments-section"
+      style="
+        background-image: url(&quot;img/di-element-dots-bg.png&quot;);
+        background-repeat: no-repeat;
+        background-position: center 80%;
+        background-size: contain;
+      "
+    >
+      <div class="container">
+        <h2 class="env-section-title">DESIGNED FOR EVERY ENVIRONMENT</h2>
+        <span class="env-underline"></span>
+
+        <div
+          class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center"
+        >
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-mortarboard env-icon"></i>
+              <div class="env-label">Schools &amp; Institutions</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-buildings env-icon"></i>
+              <div class="env-label">Warehouses</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-building-gear env-icon"></i>
+              <div class="env-label">Industries</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-cart3 env-icon"></i>
+              <div class="env-label">Retail Chains</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-hospital env-icon"></i>
+              <div class="env-label">Hospitals</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-cup-hot env-icon"></i>
+              <div class="env-label">Hospitality</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-briefcase env-icon"></i>
+              <div class="env-label">Offices</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="env-card reveal">
+              <i class="bi bi-house-door env-icon"></i>
+              <div class="env-label">Homes &amp; Societies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     OUR PRODUCTS
+     ============================================================ -->
+    <section
+      class="products-section"
+      style="
+        background-image: url(&quot;img/di-element-dots-bg.png&quot;);
+        background-repeat: no-repeat;
+        background-position: center 80%;
+        background-size: contain;
+      "
+    >
+      <div class="container">
+        <h2 class="prod-section-title mb-1">OUR PRODUCTS</h2>
+        <div
+          class="env-underline mb-4"
+          style="
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--blue-primary);
+            margin: 0 auto 36px;
+            border-radius: 2px;
+          "
+        ></div>
+
+        <div class="row g-4">
+          <!-- Fire Detection -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="prod-card reveal h-100">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="prod-icon-wrap">
+                  <i class="bi bi-fire"></i>
+                </div>
+                <div class="prod-card-title">Fire Detection<br />Solutions</div>
+              </div>
+              <ul class="prod-list">
+                <li>Semi Addressable Fire Alarm</li>
+                <li>IP Based Fire Alarms</li>
+                <li>Fire Alarm Accessories</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Intrusion Detection -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="prod-card reveal h-100">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="prod-icon-wrap">
+                  <i class="bi bi-lock"></i>
+                </div>
+                <div class="prod-card-title">Intrusion<br />Detection</div>
+              </div>
+              <ul class="prod-list">
+                <li>Intruder Alarm</li>
+                <li>IP Based Intruder Alarm</li>
+                <li>GSM Autodialers</li>
+                <li>Smart Shutter Guards</li>
+                <li>Security Alarm Accessories</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- High Value Protection -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="prod-card reveal h-100">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="prod-icon-wrap">
+                  <i class="bi bi-gem"></i>
+                </div>
+                <div class="prod-card-title">High Value<br />Protection</div>
+              </div>
+              <ul class="prod-list">
+                <li>Electronic Time Locks</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 24/7 Alarm Monitoring -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="prod-card reveal h-100">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div
+                  class="prod-icon-wrap-247"
+                  style="
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="bi bi-arrow-repeat"
+                    style="position: relative; z-index: 0; font-size: 70px"
+                  ></i>
+                  <span
+                    style="
+                      position: absolute;
+                      font-size: 12px;
+                      font-weight: 700;
+                      color: #028bd7;
+                      z-index: 1;
+                      line-height: 1;
+                    "
+                    >24/7</span
+                  >
+                </div>
+                <div class="prod-card-title">
+                  &nbsp; 24/7 Alarm<br />Monitoring
+                </div>
+              </div>
+              <ul class="prod-list">
+                <li>Health Monitoring</li>
+                <li>Alarm Monitoring</li>
+                <li>Central Monitoring Station</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     CONTACT / CTA
+     ============================================================ -->
+ <section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner reveal" style="background-color: #f4f7fb;">
+      <div class="row g-0 align-items-center">
+
+        <!-- Image -->
+        <div class="col-lg-3 d-none d-lg-flex justify-content-center">
+          <img
+            src="img/digitals-india-contact.png"
+            alt="contact"
+            style="width: 260px; height: auto; object-fit: contain;"
+          />
+        </div>
+
+        <!-- Title + Features -->
+        <div class="col-lg-4">
+          <div class="contact-left">
+            <h2 class="contact-title">Get in Touch With Us</h2>
+            <div class="contact-feat">
+              <i class="bi bi-telephone-fill"></i>
+              We call back within 2 hours
+            </div>
+            <div class="contact-feat">
+              <i class="bi bi-person-check"></i>
+              Talk to our security experts
+            </div>
+            <div class="contact-feat">
+              <i class="bi bi-envelope-fill"></i>
+              Get a free consultation
+            </div>
+            <div class="contact-feat">
+              <i class="bi bi-shield-check"></i>
+              Secure what matters most
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="col-lg-5">
+          <div class="contact-right">
+            <form id="contactForm" novalidate>
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name"
+                  placeholder="Full Name" required />
+              </div>
+
+              <div class="mb-3">
+                <input type="tel" class="form-control" id="phone"
+                  placeholder="Phone Number" required />
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email"
+                  placeholder="Email Address" required />
+              </div>
+
+              <div class="mb-4">
+                <select class="form-select" id="product"
+                  aria-label="Select the product" required>
+                  <option selected disabled>I am looking for</option>
+                  <option value="Fire Alarm">Fire Alarm</option>
+                  <option value="CCTV">CCTV</option>
+                  <option value="Security Alarm">Security Alarm</option>
+                  <option value="AMC">AMC</option>
+                </select>
+              </div>
+
+           <!-- ✅ CAPTCHA -->
+<div class="mb-4">
+  <div class="captcha-box">
+    <div class="captcha-question">
+      <span id="captchaCanvas"></span>
+      <button type="button" class="captcha-refresh" id="refreshCaptcha"
+        title="Refresh CAPTCHA" aria-label="Refresh CAPTCHA">
+        <i class="bi bi-arrow-clockwise"></i>
+      </button>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      id="captchaInput"
+      placeholder="Enter the answer"
+      autocomplete="off"
+      required
+    />
+    <!-- ✅ Error moved INSIDE the box, hidden by default -->
+    <div class="captcha-error" id="captchaError" style="display:none;">
+      <i class="bi bi-x-circle-fill"></i> Incorrect answer. Please try again.
+    </div>
+  </div>
+</div>
+
+              <button type="submit" class="btn-submit">
+                Request a Callback
+                <span class="arrow-circle">
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTCHA Styles -->
+
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="footer-nav d-flex flex-wrap align-items-center gap-1">
+              <a href="https://digitalsindia.com/productByBrand.html">Products</a>
+              <span class="separator">|</span>
+              <a href="https://digitalsindia.com/guardNg-security-alarm.html">Services</a>
+              <span class="separator">|</span>
+              <a href="https://digitalsindia.com/about.html">About Us</a>
+              <span class="separator">|</span>
+              <a href="https://digitalsindia.com/contactUs.html">Contact</a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-contact">
+              <a
+                href="https://www.digitalsindia.com"
+                target="_blank"
+                rel="noopener"
+                >www.digitalsindia.com</a
+              >
+              <a href="tel:+919212787332" class="phone">+91 9212787332</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- ============================================================
+   FLOATING WHATSAPP BUTTON
+   ============================================================ -->
+
+ <a href="https://wa.me/919212787332"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-float"
+  aria-label="Chat with us on WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="28"
+    height="28"
+    fill="white"
+  >
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.737 5.469 2.027 7.773L0 32l8.453-2.013A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.773-1.853l-.486-.29-5.02 1.196 1.24-4.88-.317-.5A13.273 13.273 0 0 1 2.667 16C2.667 8.637 8.637 2.667 16 2.667S29.333 8.637 29.333 16 23.363 29.333 16 29.333zm7.273-9.874c-.398-.2-2.355-1.162-2.72-1.295-.366-.133-.632-.2-.899.2-.266.398-1.031 1.295-1.264 1.562-.233.266-.466.3-.864.1-.398-.2-1.681-.62-3.201-1.977-1.183-1.056-1.981-2.36-2.213-2.758-.233-.398-.025-.613.175-.812.18-.178.398-.466.597-.699.2-.233.266-.398.398-.664.133-.266.067-.499-.033-.699-.1-.2-.899-2.168-1.232-2.967-.324-.779-.654-.673-.899-.686l-.765-.013c-.266 0-.699.1-1.065.499-.366.398-1.398 1.367-1.398 3.334s1.432 3.867 1.631 4.133c.2.266 2.818 4.3 6.827 6.032.954.412 1.699.658 2.28.842.958.305 1.83.262 2.52.159.769-.115 2.355-.963 2.688-1.893.333-.93.333-1.727.233-1.893-.1-.167-.366-.267-.764-.467z"/>
+  </svg>
+  <span class="whatsapp-tooltip">Chat with us!</span>
+</a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required Scripts -->
+
+
+    <!-- Custom JS -->
+    <script src="/js/landingPage.js"></script>
+  </body>
+</html>
