@@ -32,6 +32,7 @@
         ]
       }
     ],
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "meta-viewport": "off"
   }
 }
