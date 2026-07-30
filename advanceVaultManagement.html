@@ -135,6 +135,21 @@
             color: #6c757d;
             margin: 0;
         }
+        @media (min-width: 767px) {
+            .vault-card {
+                grid-column: span 1 !important;
+            }
+        }
+        @media screen and (min-width: 767px) and (max-width: 992px) {
+            .space {
+                margin-top: 18px;
+            }
+        }
+        @media (max-width: 767px) {
+            .space{
+                margin-top: 18px;
+            }
+        }
     </style>
 
 </head>
@@ -464,21 +479,21 @@
                 
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="vault-challenges-grid">
-                        <div class="vault-card">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">05</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Forced Physical Entry</p>
                                 <p class="card-solution">Break-In Proof Build. A thick, tamper-resistant steel casing built to defeat drills and forced entry.</p>
                             </div>
                         </div>
-                        <div class="vault-card">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">06</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Hostage & Duress Threats</p>
                                 <p class="card-solution">Emergency Coercion Code. A special duress protocol silently alerts help during a hostage situation.</p>
                             </div>
                         </div>
-                        <div class="vault-card" style="grid-column: span 2;">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">07</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Fragmented Operations</p>
