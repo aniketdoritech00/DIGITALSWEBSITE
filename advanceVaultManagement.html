@@ -135,6 +135,21 @@
             color: #6c757d;
             margin: 0;
         }
+        @media (min-width: 767px) {
+            .vault-card {
+                grid-column: span 1 !important;
+            }
+        }
+        @media screen and (min-width: 767px) and (max-width: 992px) {
+            .space {
+                margin-top: 18px;
+            }
+        }
+        @media (max-width: 767px) {
+            .space{
+                margin-top: 18px;
+            }
+        }
     </style>
 
 </head>
@@ -430,28 +445,28 @@
                             <div class="num-badge">01</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Stolen Key Vulnerability</p>
-                                <p class="card-solution">Electronic Time Lock with biometric/OTP-based digital access removes reliance on physical keys.</p>
+                                <p class="card-solution">Keyless Operation & Dual Authentication. A valid password is required; a stolen key alone cannot open the vault</p>
                             </div>
                         </div>
                         <div class="vault-card">
                             <div class="num-badge">02</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">After-Hours Breach Risk</p>
-                                <p class="card-solution">GSM/IP based Integrated Alarm System (Guard NG) sends instant remote alerts round the clock.</p>
+                                <p class="card-solution">Night-Time Locking. Access is permitted only within pre-approved hours, blocking off-hours entry.</p>
                             </div>
                         </div>
                         <div class="vault-card">
                             <div class="num-badge">03</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Blind Spots in Compliance</p>
-                                <p class="card-solution">Centralized "WEB-i" video management software keeps a complete, auditable activity trail.</p>
+                                <p class="card-solution">Log Management. Every access attempt is logged with a timestamp for compliance and audits.</p>
                             </div>
                         </div>
                         <div class="vault-card">
                             <div class="num-badge">04</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">High Operational Downtime</p>
-                                <p class="card-solution">Remote diagnostics and centralized monitoring cut manual checks and system downtime.</p>
+                                <p class="card-solution">Retrofit-Ready. Attaches to existing strongroom or locker doors — zero structural damage.</p>
                             </div>
                         </div>
 
@@ -464,25 +479,25 @@
                 
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="vault-challenges-grid">
-                        <div class="vault-card">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">05</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Forced Physical Entry</p>
-                                <p class="card-solution">Door Frame Metal Detector and reinforced vault sensors trigger an instant alarm on forced entry.</p>
+                                <p class="card-solution">Break-In Proof Build. A thick, tamper-resistant steel casing built to defeat drills and forced entry.</p>
                             </div>
                         </div>
-                        <div class="vault-card">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">06</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Hostage & Duress Threats</p>
-                                <p class="card-solution">Silent duress/panic trigger alerts authorities remotely without alerting the intruder.</p>
+                                <p class="card-solution">Emergency Coercion Code. A special duress protocol silently alerts help during a hostage situation.</p>
                             </div>
                         </div>
-                        <div class="vault-card" style="grid-column: span 2;">
+                        <div class="vault-card space" style="grid-column: span 2;">
                             <div class="num-badge">07</div>
                             <div class="card-body-wrap">
                                 <p class="card-text">Fragmented Operations</p>
-                                <p class="card-solution">A unified security ecosystem brings access control, alarms, and monitoring together under one dashboard.</p>
+                                <p class="card-solution">24/7 Monitoring. All sites and devices are monitored centrally from a single dashboard.</p>
                             </div>
                         </div>
                     </div>
