@@ -127,7 +127,7 @@
     if (pop) pop.classList.remove("show");
   }
 
-  function showPop(img) {
+  function showPop(img, centerX) {
     var pop = getPop();
     var pimg = pop.firstChild;
     pimg.src = img.getAttribute("data-full") || img.src;
@@ -141,6 +141,7 @@
     var top = r.top + r.height / 2 - h / 2;
     left = Math.max(8, Math.min(left, window.innerWidth - w - 8));
     top = Math.max(8, Math.min(top, window.innerHeight - h - 8));
+       if (centerX) left = Math.max(8, (window.innerWidth - w) / 2);
     pop.style.left = left + "px";
     pop.style.top = top + "px";
     pop.classList.add("show");
@@ -177,6 +178,10 @@
     var info = document.getElementById("newsSliderInfo");
     var idx = 0;
     var pv = 1;
+
+       function popupEnabled() {
+     return track.children.length > 1;
+   }
 
     function layout() {
       var slides = track.children;
@@ -239,16 +244,16 @@
     // Hover popup (desktop) / tap popup (touch)
     track.addEventListener("mouseover", function (e) {
       var img = slideImg(e.target);
-      if (img && canHover()) showPop(img);
+      if (img && canHover() && popupEnabled()) showPop(img);
     });
     track.addEventListener("mouseout", function (e) {
       if (slideImg(e.target) && canHover()) hidePop();
     });
     track.addEventListener("click", function (e) {
       var img = slideImg(e.target);
-      if (img && !canHover()) {
+      if (img && !canHover() && popupEnabled()) {
         e.stopPropagation();
-        showPop(img);
+        showPop(img, window.innerWidth < 480);
       }
     });
 
