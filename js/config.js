@@ -4,7 +4,7 @@
  */
 window.CMS_CONFIG = {
   // Backend base URL (live: e.g. "https://api.digitalsindia.com/api/cms")
-  API_BASE_URL: "http://192.168.1.13:9091/api/cms",
+  API_BASE_URL: "http://103.205.65.27:8002/CMS/api/cms",
 
   // Blog listing mein ek page par kitne blogs aayenge
   PAGE_SIZE: 10,

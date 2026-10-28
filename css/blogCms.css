@@ -9,6 +9,14 @@
   overflow: hidden;
 }
 
+/* Bina space wale lambe word (jaise "jjjjjj...") card ke bahar na jayein */
+.blog-item .blog-content .h4,
+.blog .blog-summary {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+
 .blog-state {
   padding: 60px 15px;
 }
@@ -339,6 +347,15 @@
 .blog-slider.is-single .blog-slide-inner {
   aspect-ratio: 16 / 9;
   max-height: 480px;
+}
+
+/* Sirf 1 image ho toh popup nahi hota, isliye zoom cursor / hover dim bhi nahi */
+.blog-slider.is-single .blog-slide-img {
+  cursor: default;
+}
+
+.blog-slider.is-single .blog-slide-img:hover {
+  filter: none;
 }
 
 /* Saari images ek view mein aa jayein toh arrows ki zaroorat nahi */
