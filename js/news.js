@@ -188,8 +188,8 @@
   function cardHtml(item, light, imageRight, index) {
     var href = "newsDetail.html?id=" + encodeURIComponent(item.newsId);
     var image = coverOf(item);
-    var date = CmsUtils.formatDate(CmsUtils.blogDate(item));
-    var author = item.authorName || "";
+    // var date = CmsUtils.formatDate(CmsUtils.blogDate(item));
+    // var author = item.authorName || "";
     var summary = item.summary || CmsUtils.truncate(CmsUtils.stripHtml(item.content), 320);
 
     var imgCol = image
@@ -200,15 +200,15 @@
         "</a></div>"
       : "";
 
-    var meta =
-      (date ? '<span class="me-3"><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
-      (author ? '<span><i class="fa fa-user text-primary me-2"></i>' + esc(author) + "</span>" : "");
+    // var meta =
+    //   (date ? '<span class="me-3"><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
+    //   (author ? '<span><i class="fa fa-user text-primary me-2"></i>' + esc(author) + "</span>" : "");
 
     var textCol =
       '<div class="col-md-12 ' + (image ? "col-lg-7" : "col-lg-12") + " p-4 hideScroll " +
       (image ? (imageRight ? "order-2 order-lg-1" : "order-2") : "") + '">' +
       '<p class="mb-2"><a href="' + href + '" class="news-title">' + esc(item.title) + "</a></p>" +
-      (meta ? '<p class="news-meta mb-3">' + meta + "</p>" : "") +
+      // (meta ? '<p class="news-meta mb-3">' + meta + "</p>" : "") +
       '<p class="text-dark news-summary">' + esc(summary) + "</p>" +
       '<a class="btn btn-primary rounded-pill py-2 px-4 d-block mx-auto" style="width:140px;" href="' + href + '">View More</a>' +
       "</div>";
