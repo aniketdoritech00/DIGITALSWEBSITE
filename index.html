@@ -74,6 +74,13 @@
         height: 700px;
     }
 
+    /* Badi screens par banner ki height image ke ratio ke hisaab se badhe, taaki upar/neeche se cut na ho */
+    @media (min-width: 992px) {
+        .home-banner-item.header-carousel-item {
+            height: max(700px, calc(100vw / 2.4));
+        }
+    }
+
     @media (max-width: 991px) {
         .home-banner-item.header-carousel-item {
             height: 550px;
