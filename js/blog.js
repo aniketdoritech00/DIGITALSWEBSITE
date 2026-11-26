@@ -169,8 +169,8 @@
     var href = "blogDetail.html?id=" + encodeURIComponent(blog.blogId);
     var image = CmsUtils.pickImage(blog);
     var category = blog.categories && blog.categories.length ? blog.categories[0].categoryName : "Blog";
-    var author = blog.authorName || "Digitals India";
-    var date = CmsUtils.formatDate(CmsUtils.blogDate(blog));
+    // var author = blog.authorName || "Digitals India";
+    // var date = CmsUtils.formatDate(CmsUtils.blogDate(blog));
     var summary = blog.summary || CmsUtils.truncate(CmsUtils.stripHtml(blog.content), 220);
 
     // .blog-anim = purane cards ke `wow fadeInUp` ka dynamic version (animateCards() isse pakadta hai)
@@ -185,10 +185,10 @@
       '<div class="blog-categiry py-2 px-4"><span>' + esc(category) + "</span></div>" +
       "</div>" +
       '<div class="blog-content p-4 d-flex flex-column flex-grow-1">' +
-      '<div class="blog-comment d-flex justify-content-between mb-3">' +
-      '<div class="small"><span class="fa fa-user text-primary"></span> ' + esc(author) + "</div>" +
-      (date ? '<div class="small"><span class="fa fa-calendar text-primary"></span> ' + esc(date) + "</div>" : "") +
-      "</div>" +
+      // '<div class="blog-comment d-flex justify-content-between mb-3">' +
+      // '<div class="small"><span class="fa fa-user text-primary"></span> ' + esc(author) + "</div>" +
+      // (date ? '<div class="small"><span class="fa fa-calendar text-primary"></span> ' + esc(date) + "</div>" : "") +
+      // "</div>" +
       '<a href="' + href + '" class="h4 d-inline-block mb-3">' + esc(blog.title) + "</a>" +
       '<p class="mb-3 flex-grow-1 blog-summary">' + esc(summary) + "</p>" +
       '<a href="' + href + '" class="btn p-0 mt-auto align-self-start">Read More <i class="fa fa-arrow-right"></i></a>' +

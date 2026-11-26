@@ -286,7 +286,7 @@
       })
       .join("");
 
-    var date = CmsUtils.formatDate(CmsUtils.blogDate(news));
+    // var date = CmsUtils.formatDate(CmsUtils.blogDate(news));
     var mins = readingTime(news.content);
 
     root.innerHTML =
@@ -294,8 +294,8 @@
       (cats ? '<div class="mb-3">' + cats + "</div>" : "") +
       '<h1 class="blog-detail-title mb-3">' + esc(news.title) + "</h1>" +
       '<div class="blog-detail-meta d-flex flex-wrap gap-4 mb-4 small">' +
-      '<span><i class="fa fa-user text-primary me-2"></i>' + esc(news.authorName || "Digitals India") + "</span>" +
-      (date ? '<span><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
+      // '<span><i class="fa fa-user text-primary me-2"></i>' + esc(news.authorName || "Digitals India") + "</span>" +
+      // (date ? '<span><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
       '<span><i class="fa fa-clock text-primary me-2"></i>' + mins + " min read</span>" +
       "</div>" +
       sliderHtml(images, news.title) +

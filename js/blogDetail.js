@@ -270,16 +270,16 @@
       })
       .join("");
 
-    var date = CmsUtils.formatDate(CmsUtils.blogDate(blog));
+    // var date = CmsUtils.formatDate(CmsUtils.blogDate(blog));
 
     root.innerHTML =
       '<article class="blog-detail-article">' +
       (cats ? '<div class="mb-3">' + cats + "</div>" : "") +
       '<h1 class="blog-detail-title mb-3">' + esc(blog.title) + "</h1>" +
-      '<div class="blog-detail-meta d-flex flex-wrap gap-4 mb-4 small">' +
-      '<span><i class="fa fa-user text-primary me-2"></i>' + esc(blog.authorName || "Digitals India") + "</span>" +
-      (date ? '<span><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
-      "</div>" +
+      // '<div class="blog-detail-meta d-flex flex-wrap gap-4 mb-4 small">' +
+      // '<span><i class="fa fa-user text-primary me-2"></i>' + esc(blog.authorName || "Digitals India") + "</span>" +
+      // (date ? '<span><i class="fa fa-calendar text-primary me-2"></i>' + esc(date) + "</span>" : "") +
+      // "</div>" +
       sliderHtml(images, blog.title) +
       (blog.summary ? '<p class="blog-detail-summary">' + esc(blog.summary) + "</p>" : "") +
       '<div class="blog-body" id="blogBody"></div>' +
